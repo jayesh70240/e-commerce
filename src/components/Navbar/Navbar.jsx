@@ -1,13 +1,15 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "./ck-removebg-preview.png";
+import logo from "./images/ck-removebg-preview.png";
+import Hamburger from "./Hamburger/Hamburger";
+
 function Navbar() {
   return (
     <>
       <nav>
         <div className="container">
           <div className="logo">
-            <img src={logo} />
+            <img src={logo} alt="Logo" />
           </div>
         </div>
         <div className="container side">
@@ -15,9 +17,7 @@ function Navbar() {
             <input type="search" placeholder="Search here" />
           </div>
         </div>
-        <div className="container">
-          <div className="hamburger">hamburger logo</div>
-        </div>
+      <Hamburger/>
       </nav>
     </>
   );
