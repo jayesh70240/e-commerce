@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Hamburger.css";
 import HamIcon from "./images/hamburger-menu.svg";
+import CrossIcon from "./images/cross.png";
 
 function Hamburger() {
   const [open, setOpen] = useState(false);
@@ -9,18 +10,28 @@ function Hamburger() {
     setOpen(!open);
   };
 
+  const closeMenu = () => {
+    setOpen(false);
+  };
+
   return (
     <div className={`off-screen-menu ${open ? "open" : ""}`}>
-      {/* Hamburger icon, visible below 768px */}
       <img
         src={HamIcon}
         alt="Ham"
         onClick={toggleMenu}
-        className="hamburger-icon"
+        className="icon hamburger-icon"
       />
 
-      {/* Navigation links, visible above 768px */}
       <ul className={`nav-links ${open ? "hidden" : ""}`}>
+      {open && (
+        <img
+          src={CrossIcon}
+          alt="Close"
+          onClick={closeMenu}
+          className="close-icon"
+        />
+      )}
         <li>Home</li>
         <li>About</li>
         <li>Contact Us</li>
