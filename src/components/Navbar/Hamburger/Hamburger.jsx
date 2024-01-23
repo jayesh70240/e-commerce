@@ -32,8 +32,11 @@ function Hamburger() {
           className="close-icon"
         />
       )}
-        <li>Home</li>
-        <li>About</li>
+        <li>Services</li>
+        <li>Industries</li>
+        <li>Insights</li>
+        <li>Technology</li>
+        <li>Careers</li>
         <li>Contact Us</li>
       </ul>
     </div>

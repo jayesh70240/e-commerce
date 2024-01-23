@@ -10,11 +10,9 @@ function Navbar() {
         <div className="container">
           <div className="logo">
             <img src={logo} alt="Logo" />
-          </div>
-        </div>
-        <div className="container side">
-          <div className="search-field">
-            <input type="search" placeholder="Search here" />
+            <div className="logo-text">
+              {/* <span className="c">Cherie</span><br/><span className="and">&</span><span className="k">Kittu</span> */}
+            </div>
           </div>
         </div>
       <Hamburger/>
