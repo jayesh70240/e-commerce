@@ -73,3 +73,37 @@ ul li:hover{
   border: 1px black dotted;
   cursor: pointer;
 }
+
+
+/* Services-hover effect */
+.sub-menu{
+  height: 200px;
+  width: 330px;
+  position: absolute;
+  background-color: beige;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 5px;
+  top: 60px;
+}
+.sub-menu li{
+  padding: 0;
+  margin: 0;
+}
+.sleft{
+  left: 460px
+}
+.ileft{
+  left: 580px
+}
+.inleft{
+  left: 700px
+}
+.tleft{
+  left: 830px
+}
+.cleft{
+  left:960px;
+}
